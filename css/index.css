@@ -1,15 +1,23 @@
 *{
+   
     margin: 0px;
-    padding: 0;
+    margin-top:-4px;
+    padding: 0; 
     font-family :Verdana, Geneva, Tahoma, sans-serif;
     box-sizing:border-box;
 }
+/* body{
+    width:100%;
+    margin:0;
+    padding:0;
+}  */
 head>title{
     text-transform: capitalize;
 }
 header{
     width:100%;
     height: 60px;
+    
 }
 .main>h1{
     font-family: 'Ubuntu', sans-serif;
@@ -25,6 +33,7 @@ nav{
     background-color:#5DADE2 ;
     line-height: 60px;
     position: fixed;
+     opacity:0.9;
     top : 5px;
 }
 nav ul{
@@ -42,6 +51,7 @@ nav ul li{
 }
 nav ul li:hover{
     background-color:#AED6F1 ;
+    height:70px;
 }
 nav ul li a{
     text-decoration: none;
@@ -54,22 +64,22 @@ nav ul li a{
 
 img{
     
-    margin-top:5px;
-    margin-left:5px;
+    margin-top:7px;
+    margin-left:0px;
     width: 130px;
     height: 51px;
 }
 
 .slide{
    
-    width :150%;
+    width :100%;
     height:200px;
     margin-top:3px;
    
     
 }
 .slide > img{
-    width: 99.3%;
+    width: 100%;
     height:300px;
 }
 .main{
@@ -79,13 +89,14 @@ img{
     text-align: center;
     height:10px;
     letter-spacing: 2px;
-    width:80%;
+    width:97%;
 }
 .main h1{
     text-align: center;
     text-transform: uppercase;
     text-justify: left;
     font-family: 'Sigmar One', cursive;
+    color:#1277B9;
 }
 .main > p{
     text-align:justify;
@@ -94,7 +105,7 @@ img{
 
 .content{
     background-color: rgb(196, 221, 238)  ;
-    width: 80%;
+    width: 100%;
     height: 300px;
     margin-top: 430px;
     border-radius: 2%;
@@ -145,7 +156,7 @@ img{
   .flip-front, .flip-back {
     position: absolute;
     width: 100%;
-    height: 30%;
+    height: 40%; 
     backface-visibility: hidden;
   }
   
@@ -156,18 +167,18 @@ img{
     color: white;
     transform: rotateY(180deg);
   }
-.content>h3{
+.content>h4{
     text-align: left;
     margin-left:20px;
     text-align: justify;
-    line-height: 160%;
+    /* line-height: 190%; */
     
     
 }
 
 
 
-aside{
+/* aside{
     background-color:#9ECBE8;
     border-radius: 2%;
     width:19.5%;
@@ -189,12 +200,12 @@ aside >ul> marquee>li{
     color:#1277B9  ;
     list-style-type:none;
     
-}
+} */
 footer{
     background-color:#DDEAF2  ;
     width:100%;
     height:200px;
-    margin-top:3px;
+    margin-top:6px;
     bottom: 10px;
 }
 footer >.info{
@@ -208,15 +219,18 @@ footer >.info{
     line-height: 20px;
     font-size: 20px;
     padding-top:15px;
+    
 }
 footer>.info>.font{
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Balthazar', serif;
 }
 .map>img{
-    width:50%;
-    height: 158px;
-    margin-left:335px;
-    margin-top: -400px;
+    width:73%;
+    height: 129px;
+    /* margin-left:335px; */
+    margin-top: -135px;
+    margin-right:10px;
+    float:right;
 }
 .office>img{
     width:23%;
@@ -274,6 +288,7 @@ footer>.info>.font{
 
 /*media query for respoonsive website*/
 
+
 @media screen and (max-width: 700px) {
     header>nav>ul {
       
@@ -284,68 +299,75 @@ footer>.info>.font{
       background-color:#5DADE2 ;
       width: 100%;
       opacity:0.9;
-      
-      
     }
-}
-@media screen and (max-width :700px){
     body>.slide{
         margin-top:243px;
         width:100%;
         height: 50px;
     }
-}
-@media screen and (max-width :700px){
     body>.main{
         margin-top:293px;
         width:90%;
         text-align: center;
         height: 100px;
     }
-}
-@media screen and (max-width:700px){
     .content{
         margin-top:573px;
         width:100%;
-        display: flex;
-        flex-direction: column;
+        
     }
-}
-@media screen and (max-width :700px){
     aside{
-       display:none;
+        display:none;
+     }
+     footer{
+        width:100%;
+        
     }
+    footer .info{
+        width:100%;
+        height:100px;
+        line-height:20px;
+        
+ 
+     } 
+     footer>.map>img{
+        display:none;
+      } 
+      footer>.office>img{
+        display:none;
+      } 
+      footer>.icons{
+        margin-top:10px;
+      }   
 }
-@media screen and (max-width:700px){
-    footer{
+/* for galaxy 5s */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+      nav{
+          position:relative;
+      }
+      .slide{
+          width:100%;
+      }
+      .main{
+          width:100%;
+      }
+      .content{
+        margin-top:350px;
+        width:100%;
+        
+    }
+    aside{
+        display:none;
+    }
+    
+     footer{
         width:100%;
         
     }
 }
-@media screen and (max-width :700px){
-    footer .info{
-       width:100%;
-       height:100px;
-       line-height:20px;
-       
-
-    }  
-}
- @media screen and (max-width :700px){
-    footer>.map>img{
-      display:none;
-    }  
-} 
-@media screen and (max-width :700px){
-    footer>.office>img{
-      display:none;
-    }  
-} 
-@media screen and (max-width :700px){
-    footer>.icons{
-      margin-top:10px;
-    }  
-} 
 
    
 

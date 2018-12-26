@@ -394,6 +394,8 @@ footer>.info>.font{
       background-color:lightskyblue ;
       height:260px;
        width: 100%;
+       font-size: 250%;
+       padding:10px;
       }
       .parallax1{
         /* The image used */
@@ -441,6 +443,11 @@ footer>.info>.font{
         text-justify: left;
         font-family: 'Sigmar One', cursive;
         color:#1277B9;
+    }
+    .main>p{
+        font-size:180%;
+        line-height:30px;
+        font-weight: 500;
     }
    
     .news{

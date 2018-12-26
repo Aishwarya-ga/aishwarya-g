@@ -1,0 +1,27 @@
+html,body{
+    height:100%;
+}
+#cover{
+    background:#222 url("../img/boeing2.jpg") center center no-repeat;
+    background-size:cover;
+    color:white;
+    height: 100%;
+    display:flex;
+    text-align:center;
+    opacity:0.8;
+    align-items:center;
+   
+}
+nav{
+    position: fixed;
+}
+img{
+    max-width:100%;
+}
+#cover-caption{
+    width:100%;
+}
+
+
+
+

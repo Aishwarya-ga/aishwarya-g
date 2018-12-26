@@ -14,7 +14,7 @@ head>title{
 header{
     width:100%;
     height: 60px;
-    
+    opacity:1;
 }
 .main>h1{
     font-family: 'Ubuntu', sans-serif;
@@ -31,13 +31,14 @@ nav{
     background-color:rgb(166, 194, 212) ;
     line-height: 60px;
     position: fixed;
-    
+    opacity:1;
     top : 5px;
 }
 nav ul{
     display: flex;
     float: right;
     margin-right: 30px;
+    opacity:1;
    
 }
 nav ul li{
@@ -56,6 +57,7 @@ nav ul li a{
     color:black;
     padding: 30px;
     text-transform: capitalize;
+    opacity: 1;
 }
 
 
@@ -107,11 +109,12 @@ img{
 }
 .parallax1{
     /* The image used */
-    background-image: url("/home/user/Documents/vscode-assign/assign-1/img/boeing2.jpg");
+    /* background-color: #dd4b39; */
+     background-image: url("../img/images.jpeg");
   
     /* Full height */
     
-    height: 100%; 
+    height: 90%; 
     width:100%;
   
     /* Create the parallax scrolling effect */
@@ -121,11 +124,12 @@ img{
     background-size: cover;
     margin-left:2px;
     margin-top:10px;
-    opacity: 0.8;
+    opacity: 0.4;
   }
+  
 .parallax2{
     /* The image used */
-    /* background-image: url("/home/user/Documents/vscode-assign/assign-1/img/boeing3.jpg"); */
+   
   
     /* Full height */
     
@@ -377,14 +381,14 @@ footer>.info>.font{
   and (-webkit-device-pixel-ratio: 3) {
      header{
          width:100%;
+         opacity:1;
+        
      } 
-     nav{
-       
-          width:100%;
-          
+     nav{   
+          opacity: 1;
+          width:100%;          
       }
-      header>nav>ul{
-          
+      header>nav>ul{          
       margin-top:-21px;
       display: flex;
       flex-direction: column;
@@ -396,24 +400,25 @@ footer>.info>.font{
        width: 100%;
        font-size: 250%;
        padding:10px;
+       opacity:1;
       }
       .parallax1{
         /* The image used */
-        background-image: url("/home/user/Documents/vscode-assign/assign-1/img/boeing2.jpg");
-      
+         background-image: url("../img/images.jpeg");
+      /* background-color: #007bb5; */
         /* Full height */
         
-        height: 40%; 
+        height: 45%; 
         width:100%;
       
         /* Create the parallax scrolling effect */
-        background-attachment: fixed;
+        background-attachment: relative;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         margin-left:2px;
         margin-top:280px;
-        opacity: 0.8;
+        opacity: 0.5;
       }
       .parallax2{
       height: 40%; 
@@ -469,8 +474,6 @@ footer>.info>.font{
         margin-top: -130px; 
         border-radius: 2%;
        margin-left:250px;
-       
-        
     }
     
     
